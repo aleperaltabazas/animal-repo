@@ -1,0 +1,19 @@
+#/bin/bash
+
+ANIMAL=$(( ( RANDOM % 6 ) + 1 ))
+case $ANIMAL in
+1) /usr/local/bin/asciiart/macri
+;;
+2) /usr/local/bin/asciiart/epona
+;;
+3) /usr/local/bin/asciiart/eagle
+;;
+4) /usr/local/bin/asciiart/phoenix
+;;
+5) /usr/local/bin/asciiart/bowAndArrow
+;;
+*) /usr/local/bin/asciiart/ghost 
+;;
+esac
+
+
